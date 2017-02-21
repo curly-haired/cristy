@@ -1,0 +1,8 @@
+mixin select(label, options)
+  div.select
+    div.select__label
+      span= label
+      i.select__icon
+    ul.select__options-container
+      each optionLabel in options
+        li.select__option= optionLabel

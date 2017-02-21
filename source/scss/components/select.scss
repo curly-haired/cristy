@@ -1,0 +1,30 @@
+.select {
+	padding: 0 40px 0 23px;
+	border-right: 1px solid $color-alto;
+	text-transform: uppercase;
+
+	&__options-container {
+		display: none;
+	}
+
+	&__label {
+		padding: 15px 0;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			right: -20px;
+			bottom: 15px;
+			border: 4px solid transparent;
+			border-top: 4px solid $color-dusty-gray;
+		}
+	}
+
+	&:last-child {
+		border: none;
+	}
+	&:last-child {
+		text-transform: capitalize;
+	}
+}

@@ -1,0 +1,21 @@
+.header {
+	color: $color-dusty-gray;
+	&__wrapper {
+		@extend .wrapper;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__option {
+		min-height: 40px;
+		border-bottom: 1px solid $color-alto;
+
+		&-text {
+			padding: 15px 0;
+		}
+	}
+
+	&__option-items {
+		display: flex;
+	}
+}

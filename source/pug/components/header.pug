@@ -1,0 +1,11 @@
+include ../mixins/select
+
+header.header
+  div.header__option
+    div.header__wrapper
+      p.header__option-text Free Shipping on over 100$
+      div.header__option-items
+        +select('Eng', ['Rus', 'Ukr'])
+        +select('$usd', ['eur', 'uah'])
+        +select('login', ['logout', 'Ukr'])
+    div.header__navigation
