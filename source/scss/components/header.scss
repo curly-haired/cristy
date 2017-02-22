@@ -1,5 +1,6 @@
 .header {
 	color: $color-dusty-gray;
+
 	&__wrapper {
 		@extend .wrapper;
 		display: flex;
@@ -17,5 +18,10 @@
 
 	&__option-items {
 		display: flex;
+	}
+
+	&__navigation {
+		min-height: 120px;
+		border-bottom: 1px solid $color-alto;
 	}
 }

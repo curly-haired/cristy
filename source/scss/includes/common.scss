@@ -9,6 +9,7 @@
 
 body {
 	min-width: 320px;
+	font-family: Lora, sans-serif;
 }
 
 .wrapper {
@@ -17,4 +18,11 @@ body {
 	margin-left: auto;
 	padding-right: 15px;
 	padding-left: 15px;
+}
+
+h2 {
+	color: $color-mine-shaft;
+	font-size: 36px;
+	font-style: italic;
+	font-weight: bold;
 }
