@@ -1,0 +1,6 @@
+extends ../layout
+include ../mixins/breadcrumbs
+
+block content
+  +breadcrumbs('Your cart','cart')
+  include ../components/block_cart

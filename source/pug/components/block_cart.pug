@@ -1,0 +1,60 @@
+div.cart
+  div.cart__wrapper
+    div.cart__heading
+      p.cart__heading-products Products
+      div.cart__element
+        p.cart__element-feature Size
+        p.cart__element-feature Price
+        p.cart__element-feature Quantity
+        p.cart__element-feature Total
+    div.cart__product
+      div.cart__product-item
+        img(src='images/flynkit_racer.jpg')
+        p.cart__product-name Nike Flynkit Racer
+      div.cart__product-description
+        p.cart__product-features M
+        p.cart__product-features $200
+        input.cart__product-quantity(type='number' value='3')
+        p.cart__product-total $400.00
+    div.cart__product
+      div.cart__product-item
+        img(src='images/racing_heild.jpg')
+        p.cart__product-name Nike Woman Racing Heild
+      div.cart__product-description
+        p.cart__product-features XL
+        p.cart__product-features $120
+        input.cart__product-quantity(type='number' value='3')
+        p.cart__product-total $360.00
+    div.cart__information
+      div.cart__information-coupon
+        input.cart__input(type="text" value='Your coupon code')
+        input.cart__submit(type="submit" value='Apply')
+      div.cart__information-update
+        input.cart__update(type="submit" value='Update')
+        input.cart__submit(type="submit" value='Proceed to check out')
+    div.calculations
+      div.calculations__shipping
+        p.calculations__title Calculate Shipping
+        input.calculations__shipping-info(type="text" value='Bangladesh')
+        input.calculations__shipping-info(type="text" value='State / Country')
+        input.calculations__shipping-info(type="text" value='Postcode / Zip')
+        input.calculations__shipping-submit(type="submit" value='Update Total')
+      div.calculations__description
+        p.calculations__title Cart Totals
+        div.calculations__description-container
+          div.calculations__item
+            p.calculations__info Subtotal:
+            p.calculations__price $710.00
+          div.calculations__item
+            p.calculations__info Shipping and Handling:
+            p.calculations__price Free shipping
+          div.calculations__item
+            p.calculations__info Tax
+            p.calculations__price $50.00
+          div.calculations__item
+            p.calculations__info Order Total:
+            p.calculations__price $760.00
+        div.calculations__total
+          p Total:
+          p $532.00
+

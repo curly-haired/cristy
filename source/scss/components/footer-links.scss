@@ -1,0 +1,16 @@
+.footer__links-item {
+	display: flex;
+	flex-direction: column;
+
+	p {
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	a {
+		margin-top: 20px;
+		color: $color-dove-gray;
+		font-size: 14px;
+		text-decoration: none;
+	}
+}

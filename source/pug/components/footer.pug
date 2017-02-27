@@ -1,0 +1,22 @@
+include ../mixins/footer-links
+
+div.footer
+  div.footer__wrapper
+    div.footer__links
+      +footer-links('Company', ['About', 'Our shops', 'News', 'Delivery'])
+      +footer-links('Help', ['Contact us', 'F.A.Q.', 'Help', 'Terms'])
+      +footer-links('Get Social', ['Facebook', 'Twitter', 'Instagram'])
+      div.footer__links-contact
+        p.footer__links-heading Contact
+        address 7/4 Fire Briedge Road <br> Khulna 9100, Bangladesh
+        p.footer__links-company Phone:
+          a(href='tel:+1234567890') 123-456-789
+        p.footer__links-company Email:
+          a(href='mailto:support@domain.com') support@domain.com
+  div.footer__author
+    div.footer__wrapper
+      div.footer__author-content
+        p.footer__author-site Copyright 2016. All Rights Reserved.
+        div.footer__author-subscribe
+          p Subscribe to our newsletter
+          a(href='#')

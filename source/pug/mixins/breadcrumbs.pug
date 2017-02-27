@@ -1,0 +1,9 @@
+mixin breadcrumbs(title, link)
+  div.breadcrumbs
+    div.breadcrumbs__container
+      h1=title
+      div.breadcrumbs__link
+        p You are here:
+        a(href='#') Home
+        span >
+        a(href='#')=link

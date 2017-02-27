@@ -1,0 +1,28 @@
+.breadcrumbs {
+	padding: 70px 0 75px;
+	border-bottom: 1px solid $color-alto;
+	background: $color-alabaster;
+	text-align: center;
+
+	&__link {
+		color: $color-dove-gray;
+		font-size: 13px;
+
+		p {
+			display: inline;
+			margin-right: 14px;
+			font-weight: bold;
+		}
+
+		a {
+			color: inherit;
+			font-style: italic;
+			text-decoration: none;
+		}
+
+		span {
+			margin: 0 12px;
+			color: $color-keppel;
+		}
+	}
+}

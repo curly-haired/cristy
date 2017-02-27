@@ -1,15 +1,15 @@
 include ../mixins/select
 
 header.header
-  div.header__option
-    div.header__wrapper
-      p.header__option-text Free Shipping on over 100$
-      div.header__option-items
+  div.header__topbar
+    div.header__topbar-wrapper
+      p.header__topbar-text Free Shipping on over 100$
+      div.header__topbar-items
         +select('Eng', ['Rus', 'Ukr'])
         +select('$usd', ['eur', 'uah'])
         +select('login', ['logout', 'Ukr'])
   div.header__navigation
-    div.header__wrapper
+    div.header__navigation-wrapper
       div.header__navigation-item jjkj
       h2 Cristy
       div.header__navigation-item kjkj

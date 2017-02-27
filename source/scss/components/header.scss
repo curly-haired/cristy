@@ -1,27 +1,35 @@
 .header {
 	color: $color-dusty-gray;
 
-	&__wrapper {
+	&__topbar-wrapper {
 		@extend .wrapper;
 		display: flex;
 		justify-content: space-between;
 	}
 
-	&__option {
+	&__topbar {
 		min-height: 40px;
 		border-bottom: 1px solid $color-alto;
 
 		&-text {
 			padding: 15px 0;
 		}
-	}
 
-	&__option-items {
-		display: flex;
+		&-items {
+			display: flex;
+			justify-content: space-between;
+		}
 	}
 
 	&__navigation {
-		min-height: 120px;
 		border-bottom: 1px solid $color-alto;
+
+		&-wrapper {
+			@extend .wrapper;
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+			min-height: 120px;
+		}
 	}
 }

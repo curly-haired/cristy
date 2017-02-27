@@ -1,21 +1,38 @@
 .select {
+	position: relative;
 	padding: 0 40px 0 23px;
 	border-right: 1px solid $color-alto;
 	text-transform: uppercase;
-	//background: $color-alabaster;
 
+	&:last-child {
+		border: 0;
+		text-transform: capitalize;
+	}
+
+	&:hover {
+		border-right: 1px solid $color-alto;
+		background: $color-alabaster;
+	}
 
 	&__options-container {
 		display: none;
 		position: absolute;
+		left: 0;
+		min-width: 100%;
 		border-right: 1px solid $color-alto;
+		border-bottom: 1px solid $color-alto;
 		background: $color-alabaster;
+		text-align: center;
+		box-sizing: content-box;
+
+		.select:hover & {
+			display: block;
+		}
 	}
 
 	&__label {
 		position: relative;
 		padding: 15px 0;
-
 
 		&::after {
 			position: absolute;
@@ -25,10 +42,5 @@
 			border-top: 4px solid $color-dusty-gray;
 			content: '';
 		}
-	}
-
-	&:last-child {
-		border: none;
-		text-transform: capitalize;
 	}
 }
